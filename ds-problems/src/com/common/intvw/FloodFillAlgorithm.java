@@ -8,7 +8,7 @@ import java.util.Stack;
 
 /**
  * In this problem, if we click on a position(cell). the structure linked to that cell
- * will be filled with a new value  
+ * will be filled with a new value. 
  *
  */
 public class FloodFillAlgorithm
@@ -185,7 +185,8 @@ public class FloodFillAlgorithm
 		
 	}
 	
-	private static void checkAndAdd(Stack<String> stack, Set<String> visited, String s, int cellValue, int adjVal)
+	private static void checkAndAdd(Stack<String> stack, Set<String> visited, 
+			String s, int cellValue, int adjVal)
 	{
 		if(adjVal == cellValue && !visited.contains(s))
 		{
